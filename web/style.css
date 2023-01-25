@@ -1,0 +1,91 @@
+
+
+*{
+    margin:0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box ;
+    list-style-type:none;
+}
+body{
+    font-family: Helvetica, serif;
+    background-image: url("pattern.png");
+
+}
+
+
+.control{
+    height: 60px;
+    width: 100%;
+    display:flex;
+    position: fixed;
+    bottom:0;
+    left: 0px;
+    box-sizing: border-box ;
+
+}
+
+.control input[type="text"]{
+    height: 60px;
+    width: auto;
+    flex:2;
+    text-indent:20px;
+    outline:none;
+    border:0;
+    background-color:#293338;
+    color: #fff;
+    font-size:17px;
+    font-weight:300;
+    border-radius:90px 90px 90px 90px;
+    padding: 0 20px 0 0;
+}
+
+.control input[type="text"]::placeholder{
+    color: #949494;
+}
+
+.control button{
+    height: 60px;
+    width: 60px;
+    background-color: #fff0;
+    border-radius:90px 90px 90px 90px;
+    outline:none;
+}
+.control button i{
+    font-size:22px;
+    color: #fff;
+}
+
+
+
+.chat{
+    position: relative ;
+    width: 100%;
+
+}
+.chat li{
+    margin: 5px 0;
+    min-height: 50px;
+    width: 100%;
+    padding:0 10px;
+}
+.chat li .r{
+    min-height:50px;
+    max-width:250px;
+    background-color: #24e344;
+    border-radius:25px 25px 5px 25px;
+    padding: 15px 20px;
+    color:#fff;
+    word-wrap: break-word;
+    float:right;
+}
+.chat li .l{
+    min-height:50px;
+    max-width:250px;
+    background-color: #eee;
+  border-radius:25px 25px 25px 5px;
+    padding: 15px 20px;
+    color:#000;
+    word-wrap: break-word;
+    float:left;
+}
